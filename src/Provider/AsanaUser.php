@@ -12,7 +12,7 @@ class AsanaUser implements ResourceOwnerInterface
 
     public function __construct(array $response)
     {
-        $this->id = $response['data']['id'];
+        $this->id = $response['data']['gid'];
         $this->email = $response['data']['email'];
         $this->name = $response['data']['name'];
         $this->photo = $response['data']['photo'];
